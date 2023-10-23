@@ -21,7 +21,7 @@ const Footer = () => {
           </p>
           <ul className="flex flex-col text-sm gap-2 mt-2">
             <li>
-              <Link href="/">FAQ's</Link>
+              <Link href="/">FAQs</Link>
             </li>
             <li>
               <Link href="/">Product care</Link>
@@ -122,7 +122,7 @@ const Footer = () => {
           </span>
         </div>
       </div>
-      <div className="flex justify-center mt-12">
+      <div className="flex justify-center mt-12 mb-12">
         <Link href="/">
           <h1 className="text-2xl font-bold">LOUIS VUITTON</h1>
         </Link>
