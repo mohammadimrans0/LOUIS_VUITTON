@@ -6,7 +6,7 @@ const Services = () => {
       <div className="mb-16 mt-20">
         <h1 className="text-center text-2xl font-base">Services</h1>
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-6 mt-12">
-          <div className="p-8 md:p-0">
+          <div className="px-8 py-4 md:p-0">
             <img
               src="https://eu.louisvuitton.com/images/is/image/HP_Services_Push_Contact_Us_DI3.jpg"
               alt=""
@@ -18,7 +18,7 @@ const Services = () => {
             </p>
             <p className="text-sm underline">Contact Us</p>
           </div>
-          <div className="p-8 md:p-0">
+          <div className="px-8 py-4 md:p-0">
             <img
               src="https://us.louisvuitton.com/images/is/image/HP_Services_Push_Art_Of_Gifting_DI3.jpg"
               alt=""
@@ -33,7 +33,7 @@ const Services = () => {
               <p className="text-sm underline">Gifts for Him</p>
             </span>
           </div>
-          <div className="p-8 md:p-0">
+          <div className="px-8 py-4 md:p-0">
             <img
               src="https://us.louisvuitton.com/images/is/image/HP_Services_Push_Personalization_DI3.jpg"
               alt=""

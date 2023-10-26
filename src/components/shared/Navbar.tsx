@@ -9,9 +9,9 @@ import Link from "next/link";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className={`text-white relative w-full mx-auto`}>
+    <div className={`text-white relative w-full mx-auto h-full`}>
       <div className="relative">
-        <video controls autoPlay className="video-player w-full">
+        <video controls autoPlay muted className="video-player w-full">
           <source src="https://lv-vod.fl.freecaster.net/vod/louisvuitton/iH5lUfELrY_HD.mp4" />
         </video>
         <div className="text-white text-center absolute bottom-2 md:bottom-44 mx-auto w-full">
@@ -25,9 +25,7 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`grid grid-flow-col justify-items-center place-items-center ${
-          open && "bg-slate-300"
-        } h-24`}
+        className={`grid grid-flow-col justify-items-center place-items-center`}
       >
         <div className="absolute left-6 md:left-16 top-9 flex items-start md:items-center justify-center md:gap-4">
           <div>

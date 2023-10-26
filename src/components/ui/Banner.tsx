@@ -6,7 +6,7 @@ const Banner = () => {
   return (
     <div>
       <div className="relative">
-        <video controls autoPlay className="video-player w-full">
+        <video controls autoPlay muted className="video-player w-full">
           <source src="https://lv-vod.fl.freecaster.net/vod/louisvuitton/BrGH2Rcx4A_HD.mp4" />
         </video>
         <div className="text-white text-center absolute bottom-2 md:bottom-16 mx-auto w-full">
@@ -51,7 +51,7 @@ const Banner = () => {
         </div>
       </div>
       <div className="relative">
-        <video controls autoPlay className="w-full">
+        <video controls autoPlay muted className="w-full">
           <source src="https://lv-vod.fl.freecaster.net/vod/louisvuitton/RBQmoXQwtn_HD.mp4" />
         </video>
         <div className="text-white text-center absolute bottom-2 md:bottom-16 mx-auto w-full">
@@ -98,7 +98,7 @@ const Banner = () => {
         </div>
       </div>
       <div className="relative">
-        <video controls autoPlay className="w-full">
+        <video controls autoPlay muted className="w-full">
           <source src="https://lv-vod.fl.freecaster.net/vod/louisvuitton/1iUNr99lYG_HD.mp4" />
         </video>
         <div className="text-white text-center absolute bottom-2 md:bottom-16 mx-auto w-full">
