@@ -9,63 +9,75 @@ import Link from "next/link";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div
-      className={`relative w-full mx-auto shadow-md h-screen ${
-        open && "bg-black"
-      }`}
-    >
+    <div className={`text-white relative w-full mx-auto`}>
+      <div className="relative">
+        <video controls autoPlay className="video-player w-full">
+          <source src="https://lv-vod.fl.freecaster.net/vod/louisvuitton/iH5lUfELrY_HD.mp4" />
+        </video>
+        <div className="text-white text-center absolute bottom-2 md:bottom-44 mx-auto w-full">
+          <h1 className="text-2xl md:text-3xl">Artycapucines 2023</h1>
+          <span className="flex items-center justify-center mt-4">
+            <button className="text-xs md:text-base w-44 md:w-60 border border-1 border-white px-5 py-3 rounded-full">
+              Discover the Collection
+            </button>
+          </span>
+        </div>
+      </div>
+
       <div
         className={`grid grid-flow-col justify-items-center place-items-center ${
           open && "bg-slate-300"
         } h-24`}
       >
-        <div className="absolute left-16 top-10 flex items-center justify-center gap-4">
+        <div className="absolute left-6 md:left-16 top-9 flex items-start md:items-center justify-center md:gap-4">
           <div>
             {!open && (
-              <div className="flex items-center justify-center gap-4 cursor-pointer">
+              <div className="flex items-center justify-center md:gap-4 cursor-pointer">
                 <RxHamburgerMenu
                   className="text-xl"
                   onClick={() => setOpen(!open)}
                 />
-                <div>
+                <div className="invisible md:visible">
                   <h1>Menu</h1>
                 </div>
               </div>
             )}
           </div>
-          <div className="flex items-center justify-center gap-2 cursor-pointer">
+          <div className="flex items-center justify-center md:gap-2 cursor-pointer">
             <div>
               <BiSearch className="text-xl" />
             </div>
-            <div>
+            <div className="invisible md:visible">
               <h1>Search</h1>
             </div>
           </div>
         </div>
-        <div className="static text-center mx-auto w-full top-10">
+        <div className="absolute left-[37%] lg:left-[44%] w-full top-9">
           <Link href="/">
-            <h1 className="text-3xl font-bold">LOUIS VUITTON</h1>
+            <h1 className="text-xl md:text-2xl lg:text-3xl font-bold">
+              LOUIS VUITTON
+            </h1>
           </Link>
         </div>
-        <div className="absolute right-16 top-10">
-          <ul className="flex flex-row items-center justify-center gap-x-8">
-            <li className="">
-              <Link href="/" className=" text-gray-500 text-sm ">
+        <div className="absolute right-4 md:right-16 top-9">
+          <ul className=" flex flex-row items-center justify-center gap-x-8">
+            <li className="invisible md:visible">
+              <Link href="/" className="text-sm ">
                 Call Us
               </Link>
             </li>
-            <li className="">
-              <Link href="/" className=" text-gray-500 text-sm">
+            <li className="invisible md:visible">
+              <Link href="/" className="text-sm">
                 Wishlist
               </Link>
             </li>
-            <li className="">
-              <Link href="/" className=" text-gray-500 text-sm ">
+            <li className="invisible md:visible">
+              <Link href="/" className="text-sm ">
                 MyLV
               </Link>
             </li>
             <li className="">
-              <Link href="/" className=" text-gray-500 text-2xl">
+              <Link href="/" className="text-2xl">
                 <HiShoppingBag />
               </Link>
             </li>
@@ -78,9 +90,9 @@ const Navbar = () => {
           open ? "left-0" : "left-[-500px]"
         }`}
       >
-        <div className="flex justify-start px-7 py-2">
+        <div className="flex justify-start md:px-7 py-2">
           {open && (
-            <div className="flex items-center justify-center gap-4 cursor-pointer">
+            <div className="text-black flex items-center justify-center gap-4 cursor-pointer">
               <RxCross1 className="text-xl" onClick={() => setOpen(!open)} />
               <div>
                 <h1>Close</h1>
@@ -88,7 +100,7 @@ const Navbar = () => {
             </div>
           )}
         </div>
-        <ul className={` flex flex-col justify-start gap-8 px-6 mt-8`}>
+        <ul className={` flex flex-col justify-start gap-8 md:px-6 mt-8`}>
           <li className="h-8 text-gray-900 text-2xl">
             <Link
               href="/"
@@ -182,7 +194,7 @@ const Navbar = () => {
         </ul>
         <hr className="my-12" />
         <div>
-          <ul className={` flex flex-col justify-start gap-4 px-6 mt-4`}>
+          <ul className={` flex flex-col justify-start gap-4 md:px-6 mt-4`}>
             <li className="h-8 text-gray-900 text-base">
               <Link href="/">Sustainability</Link>
             </li>
